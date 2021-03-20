@@ -44,4 +44,6 @@ Button(root, text="Generate Password", command=generate).pack()
 
 Entry(root, textvariable=password_string, width="30").pack()
 Button(root, text="Copy to clipboard", command=copy_to_clipboard).pack()
-root.mainloop()
+
+if __name__ == "__main__":
+    root.mainloop()
