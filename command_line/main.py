@@ -13,7 +13,7 @@ def generate():
             print("Input not a number")
 
     alphabet = string.ascii_letters + string.digits
-    password = ''.join(secrets.choice(alphabet) for i in range(pass_length))
+    password = "".join(secrets.choice(alphabet) for i in range(pass_length))
 
     with open("password.txt", "a+") as f:
         print("Writing account info to file")
